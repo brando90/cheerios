@@ -1,10 +1,10 @@
 opam-version: "2.0"
-maintainer: "palmskog@gmail.com"
+maintainer: "brandojazz@gmail.com"
 version: "dev"
 
-homepage: "https://github.com/uwplse/cheerios"
-dev-repo: "git+https://github.com/uwplse/cheerios.git"
-bug-reports: "https://github.com/uwplse/cheerios/issues"
+homepage: "https://github.com/brando90/cheerios"
+dev-repo: "git+https://github.com/brando90/cheerios.git"
+bug-reports: "https://github.com/brando90/cheerios/issues"
 license: "BSD-2-Clause"
 
 synopsis: "Coq library for verified serialization"
@@ -16,7 +16,7 @@ for many standard library types."""
 build: [make "-j%{jobs}%"]
 install: [make "install"]
 depends: [
-  "coq" {>= "8.14"}
+  "coq" {== "8.16.1"}
   "coq-struct-tact" {= "dev"}
 ]
 
